@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="444.0" prefWidth="378.9999000000025" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="ui.AddNewBookController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Label fx:id="pageTitle" layoutX="27.0" layoutY="24.0" text="Add new Book">
+      <font>
+        <Font name="System Bold" size="14.0" />
+      </font>
+    </Label>
+    <Label fx:id="bookTitle" layoutX="27.0" layoutY="55.0" text="Title" />
+    <Label id="Author" fx:id="Author1" layoutX="27.0" layoutY="124.0" minHeight="14.0" prefHeight="14.0" prefWidth="58.0" text="Authour1" />
+    <TextField fx:id="bookTitleTxt" layoutX="157.0" layoutY="55.0" prefWidth="200.0" />
+    <TextField fx:id="maxCheckoutTxt" layoutX="157.0" layoutY="89.0" prefWidth="200.0" />
+    <TextField id="Authortxt" fx:id="Authortxt1" layoutX="157.0" layoutY="124.0" prefWidth="200.0" />
+    <TextField fx:id="numberOfCopiestxt" layoutX="157.0" layoutY="168.0" prefWidth="200.0" />
+    <Label fx:id="maxCheckout" layoutX="27.0" layoutY="89.0" text="Max Checkout" />
+    <Label fx:id="numberOfCopies" layoutX="22.0" layoutY="163.0" text="Number Of Copies" />
+    <Button fx:id="addbtn" layoutX="161.0" layoutY="253.0" mnemonicParsing="false" onAction="#addNewBook" text="Add" />
+    <Label fx:id="result" layoutX="283.0" layoutY="312.0" text="Label" />
+  </children>
+</AnchorPane>

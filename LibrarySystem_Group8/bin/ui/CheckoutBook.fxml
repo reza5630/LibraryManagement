@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="246.99980000000505" prefHeight="274.99980000000505" prefWidth="389.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="ui.CheckoutBookController">
+  <children>
+    <Label id="lbl_checkoutBook" layoutX="21.0" layoutY="28.0" text="Checkout Book" />
+    <Label id="lbl_memberId" layoutX="42.0" layoutY="77.0" text="Member ID" />
+    <Label id="lbl_bookIsbn" layoutX="42.0" layoutY="109.0" prefWidth="59.999908447265625" text="Book ISBN" />
+    <TextField fx:id="txt_memberId" layoutX="116.0" layoutY="74.0" prefWidth="200.0" />
+    <TextField fx:id="txt_bookIsbn" layoutX="116.0" layoutY="109.0" prefWidth="200.0" />
+    <Button fx:id="btn_checkAvailablity" layoutX="138.0" layoutY="166.0" mnemonicParsing="false" onAction="#checkAvailablity" text="Check Availability" />
+    <Button fx:id="btn_checkout" layoutX="274.0" layoutY="166.0" mnemonicParsing="false" onAction="#checkoutBook" text="Checkout" />
+    <Label fx:id="lbl_status" layoutX="181.0" layoutY="237.0" text="Status" visible="false" />
+  </children>
+</AnchorPane>

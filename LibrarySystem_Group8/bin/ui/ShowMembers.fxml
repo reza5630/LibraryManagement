@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="578.0" prefWidth="666.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="ui.ShowMembersController">
+  <children>
+    <Button id="addMember" fx:id="btnAdd" layoutX="402.0" layoutY="88.0" mnemonicParsing="false" text="Add Members" />
+    <MenuButton fx:id="menuButton" layoutX="86.0" layoutY="88.0" mnemonicParsing="false" text="MemberList" />
+    <AnchorPane fx:id="userInfo" layoutX="86.0" layoutY="166.0" prefHeight="369.0" prefWidth="323.0">
+      <children>
+        <Label layoutX="36.0" layoutY="41.0" text="FirstName" />
+        <TextField id="location" fx:id="fname" layoutX="136.0" layoutY="38.0" prefWidth="159.0" />
+        <Label layoutX="36.0" layoutY="76.0" text="LastName" />
+        <TextField fx:id="lname" layoutX="136.0" layoutY="73.0" prefWidth="159.0" />
+        <Label layoutX="36.0" layoutY="112.0" text="Phone" />
+        <TextField fx:id="tel" layoutX="136.0" layoutY="109.0" prefWidth="159.0" />
+        <Label layoutX="36.0" layoutY="152.0" text="Street" />
+        <TextField fx:id="street" layoutX="136.0" layoutY="149.0" prefWidth="159.0" />
+        <Label layoutX="36.0" layoutY="188.0" text="City" />
+        <TextField fx:id="city" layoutX="136.0" layoutY="185.0" prefWidth="159.0" />
+        <Label layoutX="36.0" layoutY="228.0" text="State" />
+        <TextField fx:id="state" layoutX="136.0" layoutY="225.0" prefWidth="159.0" />
+        <Label layoutX="36.0" layoutY="266.0" text="Zip" />
+        <TextField fx:id="zip" layoutX="136.0" layoutY="263.0" prefWidth="159.0" />
+        <Button id="deleteMember" fx:id="btnDelete" layoutX="161.0" layoutY="321.0" mnemonicParsing="false" text="Delete" />
+        <Button id="updateMember" fx:id="btnUpdate" layoutX="250.0" layoutY="321.0" mnemonicParsing="false" text="Update" />
+        <Label fx:id="labelUserID" layoutX="36.0" layoutY="4.0" text="UserID" />
+        <Label fx:id="userID" layoutX="136.0" layoutY="4.0" text="Label" />
+        <Button fx:id="btnCheckout" layoutX="16.0" layoutY="321.0" mnemonicParsing="false" text="Checkout History" />
+      </children>
+    </AnchorPane>
+    <Label layoutX="224.0" layoutY="25.0" text="Welcome to the Library" />
+    <Label layoutX="212.0" layoutY="38.0" text="Your Access Level is" />
+    <Label fx:id="labelAccess" layoutX="322.0" layoutY="38.0" text="Label" />
+    <Text id="message" fx:id="messageBar" layoutX="414.0" layoutY="535.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+  </children>
+</AnchorPane>

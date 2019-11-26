@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="606.0" prefWidth="552.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="ui.AddNewAuthorController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Label fx:id="fNameLabel" layoutX="35.0" layoutY="52.0" text="first Name" />
+    <Label fx:id="lNameLabel" layoutX="31.0" layoutY="106.0" text="last Name" />
+    <Label fx:id="mobileLabel" layoutX="39.0" layoutY="145.0" text="Mobile" />
+    <Label fx:id="streetLabel" layoutX="39.0" layoutY="180.0" text="Street" />
+    <Label id="streetTxt" fx:id="cityLabel" layoutX="42.0" layoutY="214.0" text="City" />
+    <Label fx:id="zipLabel" layoutX="42.0" layoutY="257.0" text="Zip" />
+    <Label fx:id="stateLabel" layoutX="42.0" layoutY="290.0" text="State" />
+    <TextField fx:id="fNameTxt" layoutX="107.0" layoutY="52.0" prefWidth="200.0" />
+    <TextField fx:id="lNameTxt" layoutX="107.0" layoutY="100.0" prefWidth="200.0" />
+    <TextField fx:id="mobileTxt" layoutX="107.0" layoutY="139.0" prefWidth="200.0" />
+    <TextField fx:id="stateTxt" layoutX="107.0" layoutY="174.0" prefWidth="200.0" />
+    <TextField fx:id="cityTxt" layoutX="107.0" layoutY="211.0" prefWidth="200.0" />
+    <TextField fx:id="zipTxt" layoutX="107.0" layoutY="254.0" prefWidth="200.0" />
+    <TextField fx:id="streetTxt" layoutX="107.0" layoutY="295.0" prefWidth="200.0" />
+    <Label layoutX="34.0" layoutY="14.0" text="Add New  Author">
+      <font>
+        <Font name="System Bold" size="14.0" />
+      </font>
+    </Label>
+    <Label fx:id="bioLabel" layoutX="44.0" layoutY="347.0" text="bio" />
+    <TextArea fx:id="tx" layoutX="107.0" layoutY="341.0" prefWidth="200.0" wrapText="true" />
+    <Button fx:id="addAuthorBtn" layoutX="361.0" layoutY="511.0" mnemonicParsing="false" onAction="#AddNewAuthorButtonListener" text="Add  New Author" />
+    <Label fx:id="result" layoutX="370.0" layoutY="557.0" text="Label" />
+  </children>
+</AnchorPane>
